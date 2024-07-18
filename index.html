@@ -25,38 +25,48 @@
         </p>
       </div>
       <div class="form-container">
-        <form action="">
+        <form id="bmiForm">
           <div id="jenis-kelamin">
             <div><h3>Jenis Kelamin</h3></div>
             <div id="input-gender">
-              <div><input type="radio" /> <label for="">Laki-laki</label></div>
-              <div><input type="radio" /> <label for="">Perempuan</label></div>
+              <div>
+                <input type="radio" name="gender" value="Laki-laki" />
+                <label for="male">Laki-laki</label>
+              </div>
+              <div>
+                <input type="radio" name="gender" value="Perempuan" />
+                <label for="female">Perempuan</label>
+              </div>
             </div>
           </div>
           <div id="berat-badan">
             <h3>Berat Badan(kg)</h3>
             <div class="input-container">
               <i class="fas fa-pencil"></i>
-              <input type="number" name="berat-badan" />
+              <input
+                type="number"
+                name="berat-badan"
+                id="berat-badan-input"
+                required
+              />
             </div>
           </div>
           <div id="usia">
             <h3>Usia(tahun)</h3>
             <div class="input-container">
               <i class="fas fa-pencil"></i>
-              <input type="number" name="umur" />
+              <input type="number" name="umur" id="usia-input" required />
             </div>
           </div>
           <div id="tinggi">
-            <h3>Tiggi(cm)</h3>
+            <h3>Tinggi(cm)</h3>
             <div class="input-container">
               <i class="fas fa-pencil"></i>
-              <input type="number" name="tinggi" />
+              <input type="number" name="tinggi" id="tinggi-input" required />
             </div>
           </div>
-
           <div id="submit">
-            <input type="submit" value="Hitung BMI" />
+            <input type="button" value="Hitung BMI" onclick="hitungBMI()" />
             <input type="reset" value="Reset" />
           </div>
         </form>
@@ -85,6 +95,12 @@
           Anda (dalam meter) atau BMI = Kg/M².
         </p>
       </div>
+
+      <div id="hasil">
+        <!-- Hasil akan ditampilkan di sini -->
+      </div>
+
+      <script src="script.js"></script>
     </main>
   </body>
 </html>

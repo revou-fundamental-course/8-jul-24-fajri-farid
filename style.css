@@ -102,7 +102,7 @@ input[type="number"] {
   cursor: pointer;
 }
 
-input[type="submit"] {
+input[type="button"] {
   background-color: rgb(31, 109, 255);
   color: white;
 }
@@ -117,4 +117,9 @@ input[type="reset"] {
   flex-direction: column;
   gap: 1rem;
   margin: 1rem 0;
+}
+
+/* Mengatur posisi angka di dalam */
+#fitur ol {
+  list-style-position: inside;
 }
