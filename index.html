@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="style.css" />
     <title>Kalkulator BMI</title>
 
+    <!-- font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font end -->
+
     <!-- font awesome start -->
     <script
       src="https://kit.fontawesome.com/de991fd127.js"
@@ -25,38 +34,48 @@
         </p>
       </div>
       <div class="form-container">
-        <form action="">
+        <form id="bmiForm">
           <div id="jenis-kelamin">
             <div><h3>Jenis Kelamin</h3></div>
             <div id="input-gender">
-              <div><input type="radio" /> <label for="">Laki-laki</label></div>
-              <div><input type="radio" /> <label for="">Perempuan</label></div>
+              <div>
+                <input type="radio" name="gender" value="Laki-laki" />
+                <label for="male">Laki-laki</label>
+              </div>
+              <div>
+                <input type="radio" name="gender" value="Perempuan" />
+                <label for="female">Perempuan</label>
+              </div>
             </div>
           </div>
           <div id="berat-badan">
             <h3>Berat Badan(kg)</h3>
             <div class="input-container">
               <i class="fas fa-pencil"></i>
-              <input type="number" name="berat-badan" />
+              <input
+                type="number"
+                name="berat-badan"
+                id="berat-badan-input"
+                required
+              />
             </div>
           </div>
           <div id="usia">
             <h3>Usia(tahun)</h3>
             <div class="input-container">
               <i class="fas fa-pencil"></i>
-              <input type="number" name="umur" />
+              <input type="number" name="umur" id="usia-input" required />
             </div>
           </div>
           <div id="tinggi">
-            <h3>Tiggi(cm)</h3>
+            <h3>Tinggi(cm)</h3>
             <div class="input-container">
               <i class="fas fa-pencil"></i>
-              <input type="number" name="tinggi" />
+              <input type="number" name="tinggi" id="tinggi-input" required />
             </div>
           </div>
-
           <div id="submit">
-            <input type="submit" value="Hitung BMI" />
+            <input type="button" value="Hitung BMI" onclick="hitungBMI()" />
             <input type="reset" value="Reset" />
           </div>
         </form>
@@ -85,6 +104,14 @@
           Anda (dalam meter) atau BMI = Kg/M².
         </p>
       </div>
+
+      <div id="hasil">
+        <!-- Hasil akan ditampilkan di sini -->
+        
+        <!-- end hasil -->
+      </div>
+
+      <script src="script.js"></script>
     </main>
   </body>
 </html>

@@ -2,6 +2,7 @@
 html {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -70,6 +71,18 @@ body {
   padding: 5px 10px;
 }
 
+/* Menghilangkan spinner di semua browser */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Menghilangkan spinner di Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
 #berat-badan,
 #usia,
 #tinggi {
@@ -90,7 +103,7 @@ body {
   cursor: pointer;
 }
 
-input[type="submit"] {
+input[type="button"] {
   background-color: rgb(31, 109, 255);
   color: white;
 }
@@ -98,4 +111,94 @@ input[type="submit"] {
 input[type="reset"] {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
+}
+
+#fitur {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* Mengatur posisi angka di dalam */
+#fitur ol {
+  list-style-position: inside;
+}
+
+#hasil {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  line-height: 1.5;
+}
+
+#hasil-bmi {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ededed;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#hasil-bmi button {
+  width: 20%;
+  padding: 10px 10px;
+  font-size: 1rem;
+  background-color: rgb(31, 109, 255);
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#hasil-bmi #angka {
+  font-size: 3rem;
+}
+
+#hasil .konsul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+#hasil .konsul button {
+  padding: 10px 10px;
+  border: none;
+  background-color: rgb(31, 109, 255);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#hasil #penyakit {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #ededed;
+  gap: 1rem;
+}
+
+#hasil #penyakit-disebabkan {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+#hasil #download-app {
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#hasil #download-app img {
+  width: 20rem;
 }
