@@ -6,6 +6,15 @@
     <link rel="stylesheet" href="style.css" />
     <title>Kalkulator BMI</title>
 
+    <!-- font start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font end -->
+
     <!-- font awesome start -->
     <script
       src="https://kit.fontawesome.com/de991fd127.js"
@@ -98,6 +107,59 @@
 
       <div id="hasil">
         <!-- Hasil akan ditampilkan di sini -->
+        <h2>Hasil</h2>
+        <div id="hasil-bmi">
+          <p>Berat Badan Berlebih</p>
+          <p id="angka">24.7</p>
+          <p>Anda memiliki berat badan berlebih</p>
+          <button>Download Hasil BMI</button>
+        </div>
+        <p>Hasil BMI diantara 23 dan 25</p>
+        <div>
+          <p>
+            Anda berada dalam kategori overweight atau berat badan berlebih.
+          </p>
+          <p>
+            Cara terbaik untuk menurunkan berat badan adalah dengan mengatur
+            kalori makanan yang dikonsumsi dan berolahraga.
+          </p>
+          <p>
+            Jika BMI Anda berada dalam kategori ini maka Anda dianjurkan untuk
+            menurunkan berat badan hingga batas normal.
+          </p>
+        </div>
+        <div class="konsul">
+          <button>Konsultasi Ahli Gizi Via Aplikasi</button>
+          <button>Registrasi Online Ahli Gizi</button>
+        </div>
+
+        <div>
+          <p>
+            BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan
+            tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih
+            lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat
+            badan Anda.
+          </p>
+        </div>
+
+        <div id="penyakit">
+          <p>Beberapa penyakit yang berasal dari kegemukan</p>
+          <div id="penyakit-disebabkan">
+            <p>Diabetes</p>
+            <p>Hipertensi</p>
+            <p>Sakit Jantung</p>
+            <p>Osteoarthritis</p>
+          </div>
+          <div class="konsul">
+            <button>Konsultasi Dokter Via Aplikasi</button>
+            <button>Registrasi Online Sekarang</button>
+          </div>
+        </div>
+        <div id="download-app">
+          <p>download aplikasi</p>
+          <img src="assets/downloadapp.webp" alt="" />
+        </div>
+        <!-- end hasil -->
       </div>
 
       <script src="script.js"></script>

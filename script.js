@@ -6,6 +6,8 @@ function hitungBMI() {
     const tinggiMeter = tinggi / 100;
     const bmi = berat / (tinggiMeter * tinggiMeter);
 
+    console.log(berat, tinggi, bmi.toFixed(1));
+
     let hasilText = "";
     let kategori = "";
 
@@ -26,9 +28,9 @@ function hitungBMI() {
     document.getElementById("hasil").style.display = "block";
     document.getElementById("hasil").innerHTML = `
         <h2>Hasil</h2>
-        <p>Berat Badan: ${berat} kg</p>
-        <p>Tinggi Badan: ${tinggi} cm</p>
-        <p>BMI: ${bmi.toFixed(1)}</p>
+        <div id="hasil">
+            <p></p>
+        </div>
         <p>Kategori: ${kategori}</p>
         <p>${hasilText}</p>
       `;
