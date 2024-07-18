@@ -1,0 +1,101 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 2rem 10rem;
+  font-size: 1.2rem;
+}
+
+#head {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#head p {
+  margin-bottom: 1rem;
+}
+
+.form-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  /* background-color: blanchedalmond; */
+  background-color: #ededed;
+  gap: 1rem;
+}
+
+#jenis-kelamin {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#input-gender {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.input-container i.fa-pencil {
+  border: 1px solid #ccc;
+  width: 4rem;
+  height: 100%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 0.2rem;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 1rem;
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  font-size: 1.2rem;
+  flex: 1;
+  padding: 5px 10px;
+}
+
+#berat-badan,
+#usia,
+#tinggi {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#submit {
+  display: flex;
+  gap: 1rem;
+}
+
+#submit input {
+  padding: 0.8rem 1.4rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"] {
+  background-color: rgb(31, 109, 255);
+  color: white;
+}
+
+input[type="reset"] {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}

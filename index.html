@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Kalkulator BMI</title>
+
+    <!-- font awesome start -->
+    <script
+      src="https://kit.fontawesome.com/de991fd127.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awesome end -->
+  </head>
+  <body>
+    <main>
+      <div id="head">
+        <h2>Kalkulator BMI</h2>
+        <p>
+          Berat badan ideal adalah dambaan semua orang. Selain menunjang
+          penampilan, berat badan ideal juga merupakan indikator kesehatan
+          tubuh. Bagaimana dengan berat badanmu? Yuk, cek sekarang dengan
+          kalkulator BMI!
+        </p>
+      </div>
+      <div class="form-container">
+        <form action="">
+          <div id="jenis-kelamin">
+            <div><h3>Jenis Kelamin</h3></div>
+            <div id="input-gender">
+              <div><input type="radio" /> <label for="">Laki-laki</label></div>
+              <div><input type="radio" /> <label for="">Perempuan</label></div>
+            </div>
+          </div>
+          <div id="berat-badan">
+            <h3>Berat Badan(kg)</h3>
+            <div class="input-container">
+              <i class="fas fa-pencil"></i>
+              <input type="number" name="berat-badan" />
+            </div>
+          </div>
+          <div id="usia">
+            <h3>Usia(tahun)</h3>
+            <div class="input-container">
+              <i class="fas fa-pencil"></i>
+              <input type="number" name="umur" />
+            </div>
+          </div>
+          <div id="tinggi">
+            <h3>Tiggi(cm)</h3>
+            <div class="input-container">
+              <i class="fas fa-pencil"></i>
+              <input type="number" name="tinggi" />
+            </div>
+          </div>
+
+          <div id="submit">
+            <input type="submit" value="Hitung BMI" />
+            <input type="reset" value="Reset" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
